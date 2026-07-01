@@ -1,0 +1,70 @@
+:root {
+  --color-background: #f6f8fc;
+  --color-surface: #edf3fb;
+  --color-primary: rgb(27, 72, 232);
+  --color-accent: #ffd233;
+  --color-text-strong: #08142f;
+  --color-text: #53627f;
+  --font-display: 'Sora', 'Aptos Display', 'Trebuchet MS', sans-serif;
+  --font-body: 'Inter', 'Aptos', 'Segoe UI', sans-serif;
+
+  color-scheme: light;
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text);
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: inherit;
+}
+
+body,
+button,
+input {
+  font-family: var(--font-body);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
