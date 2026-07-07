@@ -62,8 +62,13 @@ function App() {
       <header className="site-header">
         <div className="container nav-bar">
           <a className="brand" href="#top" aria-label="LUZ">
-            <span className="brand__wordmark">LUZ</span>
-            <span className="brand__dot" />
+            <div className="brand__text">
+              <div className="brand__main">
+                <span className="brand__dot" />
+                <span className="brand__wordmark">LUZ</span>
+              </div>
+              <span className="brand__tagline">IA &amp; Acessibilidade</span>
+            </div>
           </a>
 
           <nav className="nav-links" aria-label="Navegação principal">
@@ -625,8 +630,13 @@ function App() {
         <div className="container footer-grid">
           <div>
             <div className="brand brand--footer">
-              <span className="brand__wordmark">LUZ</span>
-              <span className="brand__dot" />
+              <div className="brand__text">
+                <div className="brand__main">
+                  <span className="brand__dot" />
+                  <span className="brand__wordmark">LUZ</span>
+                </div>
+                <span className="brand__tagline">IA &amp; Acessibilidade</span>
+              </div>
             </div>
             <p>Tecnologia de IA para tornar a educação mais inclusiva e acessível.</p>
           </div>

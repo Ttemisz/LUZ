@@ -39,25 +39,58 @@
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
   color: var(--color-text-strong);
+}
+
+.brand__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.brand__logo-svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  flex-shrink: 0;
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.brand__main {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .brand__wordmark {
   font-family: var(--font-display);
   font-weight: 900;
   letter-spacing: -0.05em;
-  font-size: 1.75rem;
-  color: var(--color-primary);
+  font-size: 1.85rem;
+  color: var(--color-text-strong);
 }
 
 .brand__dot {
-  width: 0.65rem;
-  height: 0.65rem;
+  width: 0.55rem;
+  height: 0.55rem;
   border-radius: 999px;
   background: var(--color-accent);
-  box-shadow: 0 0 0 6px rgba(255, 210, 51, 0.18);
+  box-shadow: 0 0 0 5px rgba(255, 210, 51, 0.18);
+}
+
+.brand__tagline {
+  font-size: 0.58rem;
+  font-weight: 800;
+  color: var(--color-text);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 1px;
 }
 
 .nav-links,
