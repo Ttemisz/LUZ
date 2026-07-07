@@ -163,60 +163,59 @@ function App() {
                   </div>
                   <strong>LUZ</strong>
                   <div className="device-actions">
-                    <button type="button" className="icon-button icon-button--soft">
-                      <Icon name="camera" className="icon icon--xs icon--light" />
+                    <button type="button" className="icon-button icon-button--soft" title="Régua de Leitura">
+                      <Icon name="eye" className="icon icon--xs icon--light" />
                     </button>
-                    <button type="button" className="icon-button icon-button--soft">
-                      <Icon name="volume" className="icon icon--xs icon--light" />
+                    <button type="button" className="icon-button icon-button--soft" title="Histórico">
+                      <Icon name="book-open" className="icon icon--xs icon--light" />
                     </button>
                   </div>
                 </div>
 
                 <div className="device-card__body">
                   <div className="device-status">
-                    <Icon name="sparkles" className="icon icon--xs icon--accent" />
-                    IA processando texto...
-                  </div>
-                  <div className="device-loader">
-                    <span />
-                    <span />
-                    <span />
+                    <Icon name="file-text" className="icon icon--xs icon--accent" />
+                    <span>Resumo e Exercícios de IA.pdf</span>
                   </div>
 
                   <div className="device-output">
                     <div className="device-output__title">
-                      <Icon name="check" className="icon icon--xs icon--brand" />
-                      Texto adaptado pelo LUZ
+                      <Icon name="sparkles" className="icon icon--xs icon--brand" />
+                      Termos difíceis
                     </div>
-                    <p>
-                      As plantas usam a <mark>luz do sol</mark> para fazer seu próprio <mark>alimento</mark>.
-                    </p>
+                    
+                    <div className="device-ruler-container">
+                      <div className="device-ruler-btn">
+                        <span className="dot-green" /> Desativar régua
+                      </div>
+                      <div className="device-card-title">API (Application Programming Interface)</div>
+                      <p className="device-text-ruler-active">
+                        <span className="ruler-line ruler-line--active">É um conjunto de regras que permite</span>
+                        <span className="ruler-line ruler-line--blurred">que diferentes programas de computador</span>
+                        <span className="ruler-line ruler-line--blurred">conversem e troquem informações.</span>
+                      </p>
+                    </div>
                   </div>
 
                   <div className="device-controls">
                     <button type="button" className="control-button control-button--primary">
-                      <Icon name="volume" className="icon icon--xs icon--light" />
-                      Ouvir
+                      <Icon name="check" className="icon icon--xs icon--light" />
+                      Leitor
                     </button>
                     <button type="button" className="control-button">
-                      <Icon name="file-text" className="icon icon--xs" />
-                      Resumo
+                      <Icon name="book-open" className="icon icon--xs" />
+                      Histórico
                     </button>
-                  </div>
-
-                  <div className="device-summary">
-                    <div className="device-summary__label">RESUMO GERADO PELA IA</div>
-                    <p>Plantas convertem luz em energia química — é isso que chamamos de fotossíntese.</p>
                   </div>
                 </div>
               </div>
               <div className="floating-card floating-card--top">
-                <span>Precisão OCR</span>
-                <strong>98%</strong>
+                <span>Upload de PDF</span>
+                <strong>Até 10 pág.</strong>
               </div>
               <div className="floating-card floating-card--bottom">
-                <span>Adaptado em</span>
-                <strong>2 seg</strong>
+                <span>Guia Visual</span>
+                <strong>Com Régua</strong>
               </div>
             </div>
           </div>
@@ -441,11 +440,11 @@ function App() {
                   </p>
                 </article>
                 <article className="scientific-item">
-                  <span className="scientific-item__tag">OCR &amp; Processamento</span>
-                  <h3>OCR e Acessibilidade</h3>
+                  <span className="scientific-item__tag">Estruturação &amp; Foco</span>
+                  <h3>Reorganização por Tópicos</h3>
                   <p>
-                    Pesquisas da Universidade de Cambridge (2023) mostram que a digitalização e reformatação de
-                    textos físicos reduz a carga cognitiva em 40% para pessoas com transtornos de leitura.
+                    Pesquisas da Universidade de Cambridge (2023) mostram que a reformatação de textos complexos
+                    em tópicos claros reduz a carga cognitiva de leitura em 40% para quem tem dislexia.
                   </p>
                 </article>
                 <article className="scientific-item">
@@ -481,15 +480,17 @@ function App() {
                   <span className="demo-card__label">Texto Original</span>
                 </div>
                 <div className="demo-card__body">
+                  <div className="demo-card-title-original">API (Application Programming Interface)</div>
                   <p>
-                    &quot;A fotossíntese é o processo bioquímico pelo qual os organismos autotróficos, particularmente
-                    as plantas clorofiladas, convertem energia luminosa proveniente de fontes radiantes em energia
-                    química...&quot;
+                    &quot;Uma Application Programming Interface é uma interface de computação que define
+                    interações entre múltiplos intermediários de software. Ela define os tipos de chamadas
+                    ou solicitações que podem ser feitas, como fazê-las, os formatos de dados que devem ser
+                    usados, as regras e convenções a serem seguidas...&quot;
                   </p>
                 </div>
                 <div className="demo-card__footer demo-card__footer--warn">
                   <Icon name="eye" className="icon icon--xs icon--danger" />
-                  <span>Difícil de ler — vocabulário complexo, frases longas</span>
+                  <span>Difícil de ler — jargões técnicos, frases longas e blocos densos</span>
                 </div>
               </article>
 
@@ -499,15 +500,19 @@ function App() {
                   LUZ — Texto Adaptado pela IA
                 </div>
                 <div className="demo-card__body demo-card__body--spacious">
-                  <p>
-                    A <strong>fotossíntese</strong> é como as plantas fazem seu próprio alimento. Elas usam a{' '}
-                    <strong>luz do sol</strong>, água e o ar para criar energia. Durante esse processo, elas liberam{' '}
-                    <strong>oxigênio</strong> — o ar que respiramos.
+                  <div className="demo-ruler-btn">
+                    Desativar régua
+                  </div>
+                  <div className="demo-card-title">API (Application Programming Interface)</div>
+                  <p className="demo-text-ruler">
+                    <span className="demo-ruler-line demo-ruler-line--active">É um conjunto de regras que permite</span>
+                    <span className="demo-ruler-line demo-ruler-line--blurred">que diferentes programas de computador conversem e troquem</span>
+                    <span className="demo-ruler-line demo-ruler-line--blurred">informações entre si, como um cardápio de serviços para programas.</span>
                   </p>
                 </div>
                 <div className="demo-card__footer demo-card__footer--success">
                   <Icon name="check" className="icon icon--xs icon--success" />
-                  <span>Simplificado pela IA • Espaçamento aumentado • Leitura acessível</span>
+                  <span>Simplificado pela IA • Régua de Leitura Ativa • Sem distrações</span>
                 </div>
               </article>
             </div>
@@ -523,7 +528,7 @@ function App() {
               </div>
               <div>
                 <strong>92%</strong>
-                <p>de acerto do OCR mesmo em fotos com baixa iluminação</p>
+                <p>de precisão na extração e processamento de textos dos PDFs</p>
               </div>
             </div>
           </div>

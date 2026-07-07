@@ -1,10 +1,10 @@
 :root {
-  --color-background: #f6f8fc;
-  --color-surface: #edf3fb;
-  --color-primary: rgb(27, 72, 232);
+  --color-background: #f4fbf8;
+  --color-surface: #e6f4ed;
+  --color-primary: #059669;
   --color-accent: #ffd233;
-  --color-text-strong: #08142f;
-  --color-text: #53627f;
+  --color-text-strong: #064e3b;
+  --color-text: #2f5a4c;
   --font-display: 'Sora', 'Aptos Display', 'Trebuchet MS', sans-serif;
   --font-body: 'Inter', 'Aptos', 'Segoe UI', sans-serif;
 
