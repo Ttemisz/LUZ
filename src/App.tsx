@@ -62,11 +62,9 @@ function App() {
       <header className="site-header">
         <div className="container nav-bar">
           <a className="brand" href="#top" aria-label="LUZ">
+            <img src="/favicon.png" alt="LUZ Logo" className="brand__logo" />
             <div className="brand__text">
-              <div className="brand__main">
-                <span className="brand__dot" />
-                <span className="brand__wordmark">LUZ</span>
-              </div>
+              <span className="brand__wordmark">LUZ</span>
               <span className="brand__tagline">IA &amp; Acessibilidade</span>
             </div>
           </a>
@@ -630,11 +628,9 @@ function App() {
         <div className="container footer-grid">
           <div>
             <div className="brand brand--footer">
+              <img src="/favicon.png" alt="LUZ Logo" className="brand__logo" />
               <div className="brand__text">
-                <div className="brand__main">
-                  <span className="brand__dot" />
-                  <span className="brand__wordmark">LUZ</span>
-                </div>
+                <span className="brand__wordmark">LUZ</span>
                 <span className="brand__tagline">IA &amp; Acessibilidade</span>
               </div>
             </div>

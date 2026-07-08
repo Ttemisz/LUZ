@@ -39,6 +39,7 @@
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 0.65rem;
   text-decoration: none;
   color: var(--color-text-strong);
 }
@@ -76,12 +77,10 @@
   color: var(--color-text-strong);
 }
 
-.brand__dot {
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 999px;
-  background: var(--color-accent);
-  box-shadow: 0 0 0 5px rgba(255, 210, 51, 0.18);
+.brand__logo {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
 }
 
 .brand__tagline {
